@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Neuropsicológica</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color:rgba(86, 147, 163, 0.5);
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-buttons a {
+            text-decoration: none;
+            padding: 1px 13px;
+            background-color: #8e9292b6;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #40c4b9;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: white;
+            height: 100%;
+            background: url('imagem16.png') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        .content-box {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 0px;
+            text-align: justify;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0.5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .nav-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-buttons a {
+                margin-bottom: 10px;
+            }
+
+            footer {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-buttons {
+                align-items: center;
+            }
+
+            .nav-buttons a {
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            main {
+                margin: 10px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-buttons">
+            <a href="index.html">Home</a>
+            <a href="sobre-mim.html">Sobre Mim</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+        </div>
+    </header>
+    <main>
+        <h1><strong>Márcia Gabriella | CRP 01/20507</strong></h1>
+        <h2>Psicóloga / Neuropsicóloga</h2>
+        <div class="content-box">
+            <h1>Avaliação Neuropsicológica</h1>
+            <p>Detalhes sobre a avaliação neuropsicológica...</p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 Marcia Gabriella
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,144 @@
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    color: #0b0a0a;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8e9292b6;
+    padding: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #0d81f6;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.nav-buttons a:hover {
+    background-color: #04f93d;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align:justify;
+}
+
+.main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Permite a quebra de linha */
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-content h1 {
+    color: #007bff;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+}
+
+.about-image {
+    max-width: 300px;
+    text-align: center;
+    margin-top: 20px; /* Espaçamento para telas menores */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-buttons a {
+        margin-bottom: 10px;
+    }
+
+    .about-content {
+        padding-right: 0;
+    }
+
+    .about-image {
+        margin-top: 10px; /* Ajuste adicional para telas menores */
+        max-width: 100%; /* Garante que a imagem não ultrapasse os limites */
+    }
+
+    footer {
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-buttons {
+        align-items: center;
+    }
+
+    .nav-buttons a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+
+
+
