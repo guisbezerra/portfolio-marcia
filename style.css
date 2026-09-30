@@ -1,4 +1,7 @@
-/* Reset e estilos gerais */
+/* =========================================================
+   ESTILOS GERAIS
+   ========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +45,7 @@ main {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align:justify;
+    text-align: justify;
 }
 
 .main-image {
@@ -55,7 +58,7 @@ main {
 .about-section {
     display: flex;
     align-items: center;
-    flex-wrap: wrap; /* Permite a quebra de linha */
+    flex-wrap: wrap;
 }
 
 .about-content {
@@ -76,7 +79,7 @@ main {
 .about-image {
     max-width: 300px;
     text-align: center;
-    margin-top: 20px; /* Espaçamento para telas menores */
+    margin-top: 20px;
 }
 
 .about-image img {
@@ -96,49 +99,1811 @@ footer {
     bottom: 0;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .nav-buttons {
+
+/* =========================================================
+   HOME — MÁRCIA CARVALHO
+   ========================================================= */
+
+.home-page {
+    background-color: #f7f9f9;
+    color: #33474d;
+    font-family: "Lato", sans-serif;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.home-page .site-header {
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #dce5e7;
+    padding: 0;
+}
+
+.home-page .site-header-content {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.home-page .brand {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #365963;
+}
+
+.home-page .brand-name {
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.home-page .brand-subtitle {
+    margin-top: 3px;
+    font-size: 0.72rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #70878d;
+}
+
+
+/* ---------- MENU ---------- */
+
+.home-page .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.home-page .site-nav a {
+    padding: 9px 14px;
+    background: transparent;
+    color: #536b72;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.95rem;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.home-page .site-nav a:hover,
+.home-page .site-nav a.active {
+    background-color: #edf4f5;
+    color: #365963;
+}
+
+
+/* ---------- MAIN ---------- */
+
+.home-page .home-main {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+
+    text-align: left;
+}
+
+
+/* ---------- HERO ---------- */
+
+.home-page .hero {
+    max-width: 1180px;
+
+    min-height: 560px;
+
+    margin: 0 auto;
+    padding: 55px 30px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 480px;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.home-page .hero-content {
+    max-width: 650px;
+}
+
+.home-page .eyebrow {
+    margin: 0 0 14px;
+
+    color: #66838b;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.home-page .hero h1 {
+    margin: 0;
+
+    color: #304f58;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: clamp(2.8rem, 5vw, 4.6rem);
+
+    font-weight: 400;
+
+    line-height: 1.05;
+}
+
+.home-page .crp {
+    margin: 12px 0 28px;
+
+    color: #7b9095;
+
+    font-size: 0.9rem;
+
+    letter-spacing: 0.5px;
+}
+
+.home-page .hero-text {
+    max-width: 620px;
+
+    margin: 0 0 16px;
+
+    color: #435b62;
+
+    font-size: 1.45rem;
+
+    line-height: 1.5;
+}
+
+.home-page .hero-description {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: #708287;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* ---------- BOTÕES ---------- */
+
+.home-page .hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 45px;
+}
+
+.home-page .button {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 0.92rem;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.home-page .button-primary {
+    background-color: #547985;
+    color: white;
+}
+
+.home-page .button-primary:hover {
+    background-color: #456873;
+}
+
+.home-page .button-secondary {
+    background-color: transparent;
+
+    color: #547985;
+
+    border: 1px solid #a9bcc1;
+}
+
+.home-page .button-secondary:hover {
+    background-color: #edf4f5;
+}
+
+
+/* ---------- FOTO DA HOME ---------- */
+
+.home-page .hero-image {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 430px;
+
+    overflow: hidden;
+}
+
+.home-page .hero-image img {
+    display: block;
+
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+    object-position: center center;
+
+    border-radius: 0;
+
+    box-shadow: 0 18px 45px rgba(48, 79, 88, 0.12);
+
+    /* Transição suave para o fundo */
+    -webkit-mask-image: linear-gradient(to right,
+            black 0%,
+            black 68%,
+            rgba(0, 0, 0, 0.75) 78%,
+            rgba(0, 0, 0, 0.25) 90%,
+            transparent 100%);
+
+    mask-image: linear-gradient(to right,
+            black 0%,
+            black 68%,
+            rgba(0, 0, 0, 0.75) 78%,
+            rgba(0, 0, 0, 0.25) 90%,
+            transparent 100%);
+}
+
+/* =========================================================
+   FOTO DO INÍCIO — FORMATO RETANGULAR
+   ========================================================= */
+
+.home-page .hero {
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: 50px;
+}
+
+.home-page .hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.home-page .hero-image img {
+    display: block;
+
+    width: 500px;
+    height: 445px;
+
+    max-width: none;
+
+    object-fit: cover;
+    object-position: center 55%;
+
+    border-radius: 0;
+
+    transform: translateY(-30px);
+
+    box-shadow: 0 18px 45px rgba(48, 79, 88, 0.12);
+}
+
+
+/* ---------- SERVIÇOS NA HOME ---------- */
+
+.home-page .services-preview {
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 70px 30px 80px;
+
+    border-top: 1px solid #e1e9eb;
+}
+
+.home-page .section-heading {
+    max-width: 650px;
+
+    margin-bottom: 42px;
+}
+
+.home-page .section-heading h2 {
+    margin: 0 0 12px;
+
+    color: #304f58;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 2.4rem;
+
+    font-weight: 400;
+}
+
+.home-page .section-heading>p:last-child {
+    margin: 0;
+
+    color: #75868a;
+
+    font-size: 1rem;
+}
+
+
+/* ---------- CARDS ---------- */
+
+.home-page .service-cards {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+}
+
+.home-page .service-card {
+    padding: 32px;
+
+    background-color: white;
+
+    border: 1px solid #e0e8ea;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    box-shadow: 0 8px 25px rgba(48, 79, 88, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.home-page .service-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #c2d2d6;
+
+    box-shadow: 0 14px 30px rgba(48, 79, 88, 0.09);
+}
+
+.home-page .service-icon {
+    margin-bottom: 20px;
+
+    color: #78949b;
+
+    font-size: 0.78rem;
+
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+.home-page .service-card h3 {
+    margin: 0 0 12px;
+
+    color: #365963;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.45rem;
+
+    font-weight: 400;
+}
+
+.home-page .service-card p {
+    margin: 0 0 20px;
+
+    color: #718287;
+
+    font-size: 0.95rem;
+
+    line-height: 1.7;
+}
+
+.home-page .service-card span {
+    color: #547985;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PÁGINAS INTERNAS
+   ========================================================= */
+
+.inner-page {
+    background-color: #f7f9f9;
+
+    color: #33474d;
+
+    font-family: "Lato", sans-serif;
+}
+
+
+/* ---------- HEADER ---------- */
+
+.inner-page .site-header {
+    position: relative;
+
+    width: 100%;
+
+    background-color: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid #dce5e7;
+
+    padding: 0;
+}
+
+.inner-page .site-header-content {
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 18px 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.inner-page .brand {
+    display: flex;
+
+    flex-direction: column;
+
+    text-decoration: none;
+
+    color: #365963;
+}
+
+.inner-page .brand-name {
+    font-size: 1.35rem;
+
+    font-weight: 600;
+}
+
+.inner-page .brand-subtitle {
+    margin-top: 3px;
+
+    font-size: 0.72rem;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+
+    color: #70878d;
+}
+
+.inner-page .site-nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.inner-page .site-nav a {
+    padding: 9px 14px;
+
+    background: transparent;
+
+    color: #536b72;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 0.95rem;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.inner-page .site-nav a:hover,
+.inner-page .site-nav a.active {
+    background-color: #edf4f5;
+
+    color: #365963;
+}
+
+
+/* =========================================================
+   SOBRE MIM
+   ========================================================= */
+
+.about-main {
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 30px 30px 60px;
+
+    background: transparent;
+
+    text-align: left;
+}
+
+
+/* ---------- PRIMEIRA SEÇÃO ---------- */
+
+.about-hero {
+    display: grid;
+
+    grid-template-columns: 340px 1fr;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+/* ---------- FOTO ---------- */
+
+.about-image {
+    display: flex;
+
+    justify-content: flex-start;
+    transform: translateX(-40px);
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+
+    object-fit: cover;
+    object-position: center 55%;
+
+    border-radius: 0;
+
+    box-shadow: 0 18px 45px rgba(48, 79, 88, 0.12);
+
+-webkit-mask-image: linear-gradient(to right,
+            black 0%,
+            black 78%,
+            rgba(0, 0, 0, 0.75) 85%,
+            rgba(0, 0, 0, 0.25) 93%,
+            transparent 100%);
+
+    mask-image: linear-gradient(to right,
+            black 0%,
+            black 78%,
+            rgba(0, 0, 0, 0.75) 85%,
+            rgba(0, 0, 0, 0.25) 93%,
+            transparent 100%);
+}
+
+/* ---------- TEXTO ---------- */
+
+.about-content {
+    max-width: 650px;
+}
+
+.about-content .eyebrow {
+    margin: 0 0 14px;
+
+    color: #66838b;
+
+    font-size: 0.78rem;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.about-content h1 {
+    margin: 0;
+
+    color: #304f58;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 3.5rem;
+
+    font-weight: 400;
+
+    line-height: 1.1;
+}
+
+.about-role {
+    margin: 12px 0 24px;
+
+    color: #789096;
+
+    font-size: 0.95rem;
+}
+
+.about-content p:not(.eyebrow):not(.about-role) {
+    margin: 0 0 12px;
+
+    color: #687b80;
+
+    font-size: 0.96rem;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   MINHA ABORDAGEM — TCC
+   ========================================================= */
+
+.about-approach {
+    margin-top: 50px;
+
+    padding-top: 45px;
+
+    border-top: 1px solid #e1e9eb;
+}
+
+.about-approach .section-heading {
+    max-width: 800px;
+}
+
+.about-approach .eyebrow {
+    margin: 0 0 14px;
+
+    color: #66838b;
+
+    font-size: 0.78rem;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.about-approach h2 {
+    margin: 0 0 18px;
+
+    color: #304f58;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 2.4rem;
+
+    font-weight: 400;
+}
+
+
+/* TODOS os textos da TCC ficam iguais */
+
+.about-approach .section-heading>p {
+    margin: 0 0 14px;
+
+    color: #75868a;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+}
+
+.about-approach .section-heading>p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   RODAPÉ
+   ========================================================= */
+
+/*
+   Home e Sobre mim usam exatamente o mesmo rodapé.
+*/
+
+.home-page .site-footer,
+.inner-page .site-footer {
+    position: relative;
+
+    width: 100%;
+
+    padding: 8px 20px;
+
+    background-color: #304f58;
+
+    color: #dbe5e7;
+
+    text-align: center;
+}
+
+.home-page .site-footer p,
+.inner-page .site-footer p {
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 0.72rem;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    /* ---------- HOME ---------- */
+
+    .home-page .site-header-content {
         flex-direction: column;
-        align-items: flex-end;
+
+        gap: 15px;
     }
 
-    .nav-buttons a {
-        margin-bottom: 10px;
+    .home-page .hero {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 50px 30px;
     }
 
-    .about-content {
-        padding-right: 0;
+    .home-page .hero-content {
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+    .home-page .hero .eyebrow,
+    .home-page .hero-text,
+    .home-page .hero-description {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .home-page .hero-buttons {
+        justify-content: center;
+    }
+
+    .home-page .hero-image {
+        order: -1;
+    }
+
+    .home-page .hero-image img {
+        width: min(100%, 320px);
+
+        height: 390px;
+    }
+
+    .home-page .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ---------- PÁGINAS INTERNAS ---------- */
+
+    .inner-page .site-header-content {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .about-main {
+        padding: 45px 30px 60px;
+    }
+
+    .about-hero {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
     }
 
     .about-image {
-        margin-top: 10px; /* Ajuste adicional para telas menores */
-        max-width: 100%; /* Garante que a imagem não ultrapasse os limites */
+        order: -1;
     }
 
-    footer {
-        position: static;
-        margin-top: 20px;
-    }
-}
+    .about-image img {
+        width: min(100%, 300px);
 
-@media (max-width: 480px) {
-    .nav-buttons {
-        align-items: center;
+        height: 380px;
     }
 
-    .nav-buttons a {
-        width: 100%;
+    .about-content {
+        max-width: 100%;
+
         text-align: center;
-        padding: 10px 0;
     }
 
-    main {
-        margin: 10px;
-        padding: 15px;
+    .about-content h1 {
+        font-size: 3rem;
+    }
+
+    .about-content .eyebrow,
+    .about-content p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .about-approach .section-heading {
+        text-align: center;
+
+        margin: 0 auto;
     }
 }
 
 
+@media (max-width: 600px) {
+
+    /* ---------- HOME ---------- */
+
+    .home-page .site-header-content {
+        padding: 16px 20px;
+    }
+
+    .home-page .site-nav {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .home-page .site-nav a {
+        padding: 8px 10px;
+
+        font-size: 0.88rem;
+    }
+
+    .home-page .hero {
+        padding: 40px 20px 50px;
+    }
+
+    .home-page .hero h1 {
+        font-size: 3rem;
+    }
+
+    .home-page .hero-text {
+        font-size: 1.2rem;
+    }
+
+    .home-page .hero-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .home-page .button {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .home-page .hero-image img {
+        width: 280px;
+
+        height: 350px;
+    }
+
+    .home-page .services-preview {
+        padding: 55px 20px 65px;
+    }
+
+    .home-page .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .home-page .service-card {
+        padding: 26px;
+    }
 
 
+    /* ---------- PÁGINAS INTERNAS ---------- */
+
+    .inner-page .site-header-content {
+        padding: 16px 20px;
+    }
+
+    .inner-page .site-nav {
+        width: 100%;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    .inner-page .site-nav a {
+        padding: 8px 10px;
+
+        font-size: 0.88rem;
+    }
+
+    .about-main {
+        padding: 40px 20px 55px;
+    }
+
+    .about-image img {
+        width: 280px;
+
+        height: 350px;
+    }
+
+    .about-content h1 {
+        font-size: 2.6rem;
+    }
+
+    .about-content p:not(.eyebrow):not(.about-role) {
+        font-size: 0.95rem;
+    }
+
+    .about-approach {
+        margin-top: 50px;
+
+        padding-top: 45px;
+    }
+
+    .about-approach h2 {
+        font-size: 2rem;
+    }
+}
+
+.header-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 30px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Logo da marca no cabeçalho */
+.site-header {
+    background-color: #b3cbd2;
+}
+
+.site-header-content {
+    min-height: 100px;
+}
+
+.site-logo {
+    height: 100px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* =========================================================
+   SERVIÇOS
+   ========================================================= */
+
+.inner-page .inner-main {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 25px 30px 45px;
+
+    background: transparent;
+    text-align: left;
+}
+
+
+/* ---------- TÍTULO DA PÁGINA ---------- */
+
+.inner-page .page-heading {
+    max-width: 800px;
+    margin-bottom: 24px;
+}
+
+.inner-page .page-heading .eyebrow {
+    margin: 0 0 8px;
+
+    color: #66838b;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.inner-page .page-heading h1 {
+    margin: 0 0 8px;
+
+    color: #304f58;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.05;
+}
+
+.inner-page .page-heading>p:last-child {
+    margin: 0;
+
+    color: #75868a;
+
+    font-size: 1rem;
+    line-height: 1.55;
+}
+
+
+/* ---------- CARDS ---------- */
+
+.inner-page .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.inner-page .service-detail-card {
+    padding: 22px 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e0e8ea;
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(48, 79, 88, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.inner-page .service-detail-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #c2d2d6;
+
+    box-shadow: 0 14px 30px rgba(48, 79, 88, 0.09);
+}
+
+
+/* ---------- NÚMERO ---------- */
+
+.inner-page .service-detail-number {
+    margin-bottom: 16px;
+
+    color: #78949b;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ---------- TÍTULO ---------- */
+
+.inner-page .service-detail-content h2 {
+    margin: 0 0 10px;
+
+    color: #365963;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+
+/* ---------- TEXTO ---------- */
+
+.inner-page .service-detail-content p {
+    margin: 0 0 18px;
+
+    color: #718287;
+
+    font-size: 0.96rem;
+    line-height: 1.55;
+}
+
+
+/* ---------- BOTÃO ---------- */
+
+.inner-page .service-detail-content .button {
+    display: inline-block;
+
+    padding: 10px 17px;
+
+    background-color: #547985;
+    color: white;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: background-color 0.2s ease;
+}
+
+.inner-page .service-detail-content .button:hover {
+    background-color: #456873;
+}
+
+
+/* ---------- RODAPÉ ---------- */
+
+.inner-page {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-page .site-footer {
+    margin-top: auto;
+}
+
+
+/* =========================================================
+   SERVIÇOS — RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .inner-page .inner-main {
+        padding: 35px 30px 45px;
+    }
+
+    .inner-page .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .inner-page .inner-main {
+        padding: 30px 20px 40px;
+    }
+
+    .inner-page .page-heading h1 {
+        font-size: 3rem;
+    }
+
+    .inner-page .service-detail-card {
+        padding: 24px;
+    }
+
+    .inner-page .service-detail-content h2 {
+        font-size: 1.55rem;
+    }
+}
+
+/* =========================================================
+   CONTATO
+   ========================================================= */
+
+.inner-page .contact-main {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+
+    padding: 40px 30px 50px;
+
+    background: transparent;
+
+    text-align: left;
+
+    flex: 1;
+}
+
+
+/* ---------- TÍTULO ---------- */
+
+.inner-page .contact-heading {
+    max-width: 760px;
+
+    margin-bottom: 32px;
+}
+
+.inner-page .contact-heading .eyebrow {
+    margin: 0 0 8px;
+
+    color: #66838b;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.inner-page .contact-heading h1 {
+    margin: 0 0 10px;
+
+    color: #304f58;
+
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+
+    line-height: 1.05;
+}
+
+.inner-page .contact-heading>p:last-child {
+    margin: 0;
+
+    color: #75868a;
+
+    font-size: 1rem;
+
+    line-height: 1.55;
+}
+
+
+/* ---------- CARDS ---------- */
+
+.inner-page .contact-cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.inner-page .contact-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 28px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e0e8ea;
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    box-shadow: 0 8px 25px rgba(48, 79, 88, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.inner-page .contact-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #c2d2d6;
+
+    box-shadow: 0 14px 30px rgba(48, 79, 88, 0.09);
+}
+
+
+/* ---------- ÍCONES ---------- */
+
+.inner-page .contact-icon {
+    width: 58px;
+    height: 58px;
+
+    margin-bottom: 20px;
+}
+
+.inner-page .contact-icon img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* ---------- INFORMAÇÕES ---------- */
+
+.inner-page .contact-info h2 {
+    margin: 0 0 8px;
+
+    color: #365963;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.55rem;
+    font-weight: 400;
+}
+
+.inner-page .contact-info p {
+    margin: 0 0 18px;
+
+    color: #718287;
+
+    font-size: 0.92rem;
+
+    line-height: 1.5;
+}
+
+.inner-page .contact-info span {
+    margin-top: auto;
+
+    color: #547985;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   CONTATO — RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .inner-page .contact-main {
+        padding: 35px 30px 45px;
+    }
+
+    .inner-page .contact-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .inner-page .contact-main {
+        padding: 30px 20px 40px;
+    }
+
+    .inner-page .contact-heading h1 {
+        font-size: 2.6rem;
+    }
+
+    .inner-page .contact-card {
+        padding: 24px;
+    }
+}
+
+/* ========================================
+   PÁGINA PSICOTERAPIA
+======================================== */
+
+.inner-page .psychotherapy-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 0 60px;
+}
+
+.inner-page .psychotherapy-card {
+    background-color: #ffffff;
+    border: 1px solid #d6e2e6;
+    border-radius: 16px;
+    padding: 48px;
+    box-shadow: 0 8px 30px rgba(48, 77, 87, 0.04);
+}
+
+.inner-page .psychotherapy-number {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #718a94;
+    margin-bottom: 20px;
+}
+
+.inner-page .psychotherapy-card h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #304d57;
+    margin-bottom: 24px;
+}
+
+.inner-page .psychotherapy-card p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #627680;
+    margin-bottom: 18px;
+    max-width: 850px;
+}
+
+.inner-page .psychotherapy-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 36px;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+    .inner-page .psychotherapy-content {
+        padding-bottom: 40px;
+    }
+
+    .inner-page .psychotherapy-card {
+        padding: 28px 24px;
+    }
+
+    .inner-page .psychotherapy-card h2 {
+        font-size: 29px;
+    }
+
+    .inner-page .psychotherapy-card p {
+        font-size: 16px;
+    }
+
+    .inner-page .psychotherapy-actions {
+        flex-direction: column;
+    }
+
+    .inner-page .psychotherapy-actions .button {
+        text-align: center;
+    }
+}
+
+/* =========================================================
+   PSICOTERAPIA — AJUSTE EXCLUSIVO DA PÁGINA
+   ========================================================= */
+
+.psychotherapy-main {
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+.psychotherapy-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.psychotherapy-card {
+    width: 100%;
+
+    padding: 34px 48px 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d9e5e9;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 30px rgba(40, 75, 85, 0.04);
+}
+
+.psychotherapy-card .eyebrow {
+    margin: 0 0 14px;
+
+    color: #66838b;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.psychotherapy-card h2 {
+    margin: 0 0 20px;
+
+    color: #304f58;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 2.2rem;
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+.psychotherapy-card p:not(.eyebrow) {
+    margin: 0 0 16px;
+
+    color: #687b80;
+
+    font-size: 0.96rem;
+
+    line-height: 1.65;
+}
+
+.psychotherapy-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 24px;
+}
+
+/* Botões exclusivos da psicoterapia */
+.psychotherapy-actions .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 17px;
+
+    border-radius: 6px;
+
+    font-size: 0.9rem;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.psychotherapy-actions .button-primary {
+    background-color: #547985;
+    color: #ffffff;
+
+    border: 1px solid #547985;
+}
+
+.psychotherapy-actions .button-primary:hover {
+    background-color: #456873;
+    border-color: #456873;
+}
+
+.psychotherapy-actions .button-secondary {
+    background-color: transparent;
+    color: #547985;
+
+    border: 1px solid #a9bcc1;
+}
+
+.psychotherapy-actions .button-secondary:hover {
+    background-color: #edf4f5;
+}
+
+
+/* ---------- RODAPÉ ---------- */
+
+.psychotherapy-main+.site-footer {
+    margin-top: auto;
+}
+
+
+/* =========================================================
+   PSICOTERAPIA — CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .psychotherapy-main {
+        padding: 30px 20px 35px;
+    }
+
+    .psychotherapy-card {
+        padding: 28px 24px;
+    }
+
+    .psychotherapy-card h2 {
+        font-size: 2rem;
+    }
+
+    .psychotherapy-card p:not(.eyebrow) {
+        font-size: 0.95rem;
+    }
+
+    .psychotherapy-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+    }
+
+    .psychotherapy-actions .button {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   AVALIAÇÃO NEUROPSICOLÓGICA — AJUSTE EXCLUSIVO DA PÁGINA
+   ========================================================= */
+
+.neuropsychology-main {
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+.neuropsychology-content {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.neuropsychology-card {
+    width: 100%;
+
+    padding: 34px 48px 30px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d9e5e9;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 30px rgba(40, 75, 85, 0.04);
+}
+
+.neuropsychology-card .eyebrow {
+    margin: 0 0 14px;
+
+    color: #66838b;
+
+    font-size: 0.78rem;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.neuropsychology-card h2 {
+    margin: 0 0 20px;
+
+    color: #304f58;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 2.2rem;
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+.neuropsychology-card p:not(.eyebrow) {
+    margin: 0 0 16px;
+
+    color: #687b80;
+
+    font-size: 0.96rem;
+
+    line-height: 1.65;
+}
+
+.neuropsychology-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 24px;
+}
+
+/* Botões exclusivos da avaliação neuropsicológica */
+
+.neuropsychology-actions .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 17px;
+
+    border-radius: 6px;
+
+    font-size: 0.9rem;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.neuropsychology-actions .button-primary {
+    background-color: #547985;
+    color: #ffffff;
+
+    border: 1px solid #547985;
+}
+
+.neuropsychology-actions .button-primary:hover {
+    background-color: #456873;
+    border-color: #456873;
+}
+
+.neuropsychology-actions .button-secondary {
+    background-color: transparent;
+    color: #547985;
+
+    border: 1px solid #a9bcc1;
+}
+
+.neuropsychology-actions .button-secondary:hover {
+    background-color: #edf4f5;
+}
+
+.neuropsychology-main+.site-footer {
+    margin-top: auto;
+}
+
+
+/* =========================================================
+   AVALIAÇÃO NEUROPSICOLÓGICA — CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .neuropsychology-main {
+        padding: 30px 20px 35px;
+    }
+
+    .neuropsychology-card {
+        padding: 28px 24px;
+    }
+
+    .neuropsychology-card h2 {
+        font-size: 2rem;
+    }
+
+    .neuropsychology-card p:not(.eyebrow) {
+        font-size: 0.95rem;
+    }
+
+    .neuropsychology-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+    }
+
+    .neuropsychology-actions .button {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   TESTE DE TIPOGRAFIA — HOME
+   ========================================================= */
+
+.home-page {
+    font-family: "Lato", sans-serif;
+}
+
+.home-page h1,
+.home-page h2,
+.home-page h3 {
+    font-family: "Cormorant Garamond", serif;
+}
+
+/* =========================================================
+   TIPOGRAFIA GLOBAL DO SITE
+   ========================================================= */
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Cormorant Garamond", serif;
+}

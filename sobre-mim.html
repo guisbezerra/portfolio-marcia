@@ -1,181 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        header {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            background-color: rgba(86, 147, 163, 0.5);
-        }
+    <title>Sobre mim | Márcia Carvalho</title>
 
-        .nav-buttons {
-            display: flex;
-            gap: 10px;
-        }
+    <meta
+      name="description"
+      content="Conheça Márcia Carvalho, Psicóloga e Neuropsicóloga."
+    />
 
-        .nav-buttons a {
-            text-decoration: none;
-            padding: 1px 13px;
-            background-color: #8e9292b6;
-            color: white;
-            border-radius: 5px;
-        }
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-        .nav-buttons a:hover {
-            background-color: #40c4b9;
-        }
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-            background: url('imagem15.png') no-repeat center center;
-            color: white;
-        }
+  <body class="inner-page">
+    <header class="site-header">
+      <div class="site-header-content">
+        <a href="index.html" class="brand">
+          <img
+            src="imagem5.png"
+            alt="Márcia Carvalho - Psicóloga e Neuropsicóloga"
+            class="site-logo"
+          />
+        </a>
 
-        .content-box {
-            background-color: rgba(0, 0, 0, 0.03);
-            padding: 15px;
-            border-radius: 0px;
-            margin-bottom: 20px; /* Espaço para o rodapé */
-            text-align: justify;
-        }
-
-        h1, h2 {
-            margin: 10px 0;
-        }
-
-        p {
-            max-width: 800px;
-            text-align: justify;
-            margin: 0 auto 20px;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .buttons a {
-            text-decoration: none;
-            padding: 5px 10px;
-            background-color: #0adec298;
-            color: white;
-            border-radius: 5px;
-        }
-
-        .buttons a:hover {
-            background-color: rgb(86, 147, 163, 0.5);
-        }
-
-        .profile-image {
-            display: block;
-            margin: 30px auto;
-            width: 100%;
-            max-width: 500px; /* Ajuste o tamanho conforme necessário (largura) */
-            height: auto;
-            border-radius: 50%; /* Torna a imagem redonda */
-            overflow: hidden; /* Oculta qualquer parte da imagem fora do círculo */
-        }
-
-        footer {
-            text-align: center;
-            padding: 0.5px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
-            .nav-buttons {
-                flex-direction: column;
-                align-items: flex-end;
-            }
-
-            .nav-buttons a {
-                margin-bottom: 10px;
-            }
-
-            .buttons {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            footer {
-                position: static;
-                margin-top: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .nav-buttons {
-                align-items: center;
-            }
-
-            .nav-buttons a {
-                width: 100%;
-                text-align: center;
-                padding: 10px 0;
-            }
-
-            main {
-                padding: 10px;
-            }
-
-            p {
-                max-width: 100%;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="nav-buttons">
-            <a href="index.html">Home</a>
-            <a href="sobre-mim.html">Sobre Mim</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="contato.html">Contato</a>
-        </div>
+        <nav class="site-nav">
+          <a href="index.html">Início</a>
+          <a href="sobre-mim.html" class="active">Sobre mim</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
     </header>
-    <main>
-        <h1><strong>Márcia Gabriella | CRP 01/20507</strong></h1>
-        <h2>Psicóloga / Neuropsicóloga</h2>
-        <div class="content-box">
-        <p>Psicóloga dedicada com especialização em neuropsicologia, comprometida em promover a saúde mental e o bem-estar através de abordagens baseadas em evidências. Com sólida formação acadêmica e ampla experiência prática, possuo habilidades excepcionais em avaliação, diagnóstico e intervenção neuropsicológica.</p>
-        <p>Como neuropsicóloga com foco em Terapia Cognitiva Comportamental (TCC), integro conhecimentos de neurociência e psicologia clínica para compreender e tratar uma variedade de condições neurológicas e psicológicas. Sou apaixonada por ajudar meus pacientes a alcançar uma melhor qualidade de vida, oferecendo suporte personalizado e estratégias terapêuticas eficazes.</p>
-        <p>Além da prática clínica, estou constantemente atualizando meus conhecimentos através de cursos e seminários, garantindo que minhas técnicas e abordagens estejam alinhadas com os mais recentes avanços na área.</p> </div>
-        <img class="profile-image" src="imagem9.png" alt="Foto da Psicóloga Marcia Gabriella"> 
+
+    <main class="about-main">
+      <section class="about-hero">
+        <div class="about-image">
+          <img
+            src="foto-marcia-sobremim.png"
+            alt="Márcia Carvalho, Psicóloga e Neuropsicóloga"
+          />
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">SOBRE MIM</p>
+
+          <h1>Márcia Carvalho</h1>
+
+          <p class="about-role">Psicóloga e Neuropsicóloga · CRP 01/20507</p>
+
+          <p>
+            Sou psicóloga com especialização em neuropsicologia, comprometida
+            com a promoção da saúde mental e do bem-estar por meio de abordagens
+            baseadas em evidências.
+          </p>
+
+          <p>
+            Minha atuação integra conhecimentos de neurociência e psicologia
+            clínica, com foco em Terapia Cognitivo- Comportamental (TCC),
+            buscando compreender as necessidades e particularidades de cada
+            indivíduo.
+          </p>
+
+          <p>
+            Acredito na importância de um acompanhamento individualizado,
+            construído a partir das características, necessidades e objetivos de
+            cada pessoa.
+          </p>
+
+          <p>
+            Além da prática clínica, mantenho uma busca contínua por atualização
+            profissional, acompanhando novos conhecimentos e avanços
+            relacionados à psicologia e à neuropsicologia.
+          </p>
+        </div>
+      </section>
+
+      <section class="about-approach">
+        <div class="section-heading">
+          <p class="eyebrow">MINHA ABORDAGEM</p>
+
+          <h2>Terapia Cognitivo-Comportamental</h2>
+
+          <p>
+            Minha atuação clínica é baseada na Terapia Cognitivo-Comportamental
+            (TCC), uma abordagem estruturada e fundamentada em evidências
+            científicas.
+          </p>
+
+          <p>
+            A TCC busca compreender a relação entre pensamentos, emoções e
+            comportamentos, considerando também as experiências e o contexto de
+            cada pessoa.
+          </p>
+
+          <p>
+            O processo terapêutico é construído de forma colaborativa e
+            individualizada, considerando as necessidades, objetivos e
+            características de cada paciente.
+          </p>
+        </div>
+      </section>
     </main>
-    <footer>
-        &copy; 2024 Marcia Gabriella
+
+    <footer class="site-footer">
+      <p>© 2026 Márcia Carvalho · Psicóloga e Neuropsicóloga · CRP 01/20507</p>
     </footer>
-</body>
+  </body>
 </html>
-
-
-
-
-
-
-

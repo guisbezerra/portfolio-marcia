@@ -1,182 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        header {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            background-color:rgba(86, 147, 163, 0.5);
-        }
+    <title>Contato | Márcia Carvalho</title>
 
-        .nav-buttons {
-            display: flex;
-            gap: 10px;
-        }
+    <meta
+      name="description"
+      content="Entre em contato com Márcia Carvalho, Psicóloga e Neuropsicóloga."
+    />
 
-        .nav-buttons a {
-            text-decoration: none;
-            padding: 1px 13px;
-            background-color: #8e9292b6;
-            color: white;
-            border-radius: 5px;
-        }
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-        .nav-buttons a:hover {
-            background-color: #40c4b9;
-        }
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        .contact-buttons {
-            position: absolute;
-            top: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-            z-index: 1;
-        }
+  <body class="inner-page">
+    <header class="site-header">
+      <div class="site-header-content">
+        <a href="index.html" class="brand">
+          <img
+            src="imagem5.png"
+            alt="Márcia Carvalho - Psicóloga e Neuropsicóloga"
+            class="site-logo"
+          />
+        </a>
 
-        .contact-buttons a img {
-            width: 70px; /* Ajuste o tamanho conforme necessário */
-            height: 70px; /* Ajuste o tamanho conforme necessário */
-            border-radius: 50%; /* Torna a imagem redonda */
-            transition: transform 0.1s;
-        }
-
-        .contact-buttons a img:hover {
-            transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
-        }
-
-        main {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            height: 100%;
-            background: url('imagem1.png') no-repeat center center;
-            background-size: cover;
-        }
-
-        h1, h2 {
-            margin: 10px 0;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .buttons a {
-            text-decoration: none;
-            padding: 5px 10px;
-            background-color: #8e9292b6;
-            color: white;
-            border-radius: 20px;
-        }
-
-        .buttons a:hover {
-            background-color: rgb(86, 147, 163, 0.5);
-        }
-
-        footer {
-            text-align: center;
-            padding: 0.5px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
-            .nav-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .nav-buttons a {
-                margin-bottom: 10px;
-            }
-
-            .buttons {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            footer {
-                position: static;
-                margin-top: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .nav-buttons {
-                align-items: center;
-            }
-
-            .nav-buttons a {
-                width: 100%;
-                text-align: center;
-                padding: 10px 0;
-            }
-
-            main {
-                margin: 10px;
-                padding: 15px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="nav-buttons">
-            <a href="index.html">Home</a>
-            <a href="sobre-mim.html">Sobre Mim</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="contato.html">Contato</a>
-        </div>
+        <nav class="site-nav">
+          <a href="index.html">Início</a>
+          <a href="sobre-mim.html">Sobre mim</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="contato.html" class="active">Contato</a>
+        </nav>
+      </div>
     </header>
-    <main>
-        <div class="contact-buttons">
-            <a href="https://Instagram.com/marciacarvalho.psi" target="_blank">
-                <img src="instagram.png" alt="Instagram">
-            </a>
-            <a href="https://wa.me/5561982057153" target="_blank">
-                <img src="whatsapp.png" alt="WhatsApp">
-            </a>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=marciagabriellaa@gmail.com" target="_blank">
-                <img src="gmail.png" alt="Gmail">
-            </a>
-        </div>
-        <h1> 
-            <strong></strong>
-        </h1>
-        <h2></h2>
+
+    <main class="contact-main">
+      <section class="contact-heading">
+        <p class="eyebrow">CONTATO</p>
+
+        <h1>Vamos conversar?</h1>
+
+        <p>
+          Entre em contato para saber mais sobre o atendimento e tirar suas
+          dúvidas.
+        </p>
+      </section>
+
+      <section class="contact-cards">
+        <a
+          href="https://Instagram.com/marciacarvalho.neuropsi"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card"
+        >
+          <div class="contact-icon">
+            <img src="instagram.png" alt="Instagram" />
+          </div>
+
+          <div class="contact-info">
+            <h2>Instagram</h2>
+
+            <p>@marciacarvalho.neuropsi</p>
+
+            <span>Acessar Instagram →</span>
+          </div>
+        </a>
+
+        <a
+          href="https://wa.me/5561982057153"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card"
+        >
+          <div class="contact-icon">
+            <img src="whatsapp.png" alt="WhatsApp" />
+          </div>
+
+          <div class="contact-info">
+            <h2>WhatsApp</h2>
+
+            <p>Entre em contato pelo WhatsApp</p>
+
+            <span>Enviar mensagem →</span>
+          </div>
+        </a>
+
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=marciagabriellaa@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contact-card"
+        >
+          <div class="contact-icon">
+            <img src="gmail.png" alt="E-mail" />
+          </div>
+
+          <div class="contact-info">
+            <h2>E-mail</h2>
+
+            <p>marciagabriellaa@gmail.com</p>
+
+            <span>Enviar e-mail →</span>
+          </div>
+        </a>
+      </section>
     </main>
-    <footer>
-        &copy; 2024 Marcia Gabriella
+
+    <footer class="site-footer">
+      <p>© 2026 Márcia Carvalho · Psicóloga e Neuropsicóloga · CRP 01/20507</p>
     </footer>
-</body>
+  </body>
 </html>
-
-
-
-

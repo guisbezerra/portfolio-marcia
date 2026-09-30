@@ -1,160 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8"> 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: Arial, sans-serif;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        }
+    <title>Márcia Carvalho | Psicóloga e Neuropsicóloga</title>
 
-        header {
-            display: flex;
-            justify-content: center;
-            padding: 10px;
-            background-color:rgba(86, 147, 163, 0.5);
-        }
+    <meta
+      name="description"
+      content="Márcia Carvalho, Psicóloga e Neuropsicóloga. Psicoterapia e avaliação neuropsicológica."
+    />
 
-        .nav-buttons {
-            display: flex;
-            gap: 10px;
-        }
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Lato:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-        .nav-buttons a {
-            text-decoration: none;
-            padding: 1px 13px;
-            background-color: #8e9292b6;
-            color: white;
-            border-radius: 5px;
-        }
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        .nav-buttons a:hover {
-            background-color: #40c4b9;
-        }
+  <body class="home-page">
+    <header class="site-header">
+      <div class="site-header-content">
+        <a href="index.html" class="brand">
+          <img
+            src="imagem5.png"
+            alt="Márcia Carvalho - Psicóloga e Neuropsicóloga"
+            class="site-logo"
+          />
+        </a>
 
-        main {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-            text-align: center;
-            color: white;
-            height: 100%;
-            background: url('imagem14.png') no-repeat center center;
-            background-size: cover;
-            padding: 20px;
-        }
-
-        .content-box {
-            background-color: rgba(0, 0, 0, 0.03);
-            padding: 20px;
-            border-radius: 0px;
-            margin-bottom: 150px; /* Espaço para o rodapé */
-            text-align: justify;
-        }
-
-        h1, h2 {
-            margin: 10px 0;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .buttons a {
-            text-decoration: none;
-            padding: 10px 15px;
-            background-color: rgb(86, 147, 163, 0.5);
-            color: white;
-            border-radius: 5px;
-        }
-
-        .buttons a:hover {
-            background-color: #0adec298;
-        }
-
-        footer {
-           text-align: center;
-            padding: 0.5px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
-            .nav-buttons {
-                flex-direction: column;
-                align-items: flex-end;
-            }
-
-            .nav-buttons a {
-                margin-bottom: 10px;
-            }
-
-            .buttons {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            footer {
-                position: static;
-                margin-top: 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .nav-buttons {
-                align-items: center;
-            }
-
-            .nav-buttons a {
-                width: 100%;
-                text-align: center;
-                padding: 10px 0;
-            }
-
-            main {
-                margin: 10px;
-                padding: 15px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="nav-buttons">
-            <a href="index.html">Home</a>
-            <a href="sobre-mim.html">Sobre Mim</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="contato.html">Contato</a>
-        </div>
+        <nav class="site-nav">
+          <a href="index.html" class="active">Início</a>
+          <a href="sobre-mim.html">Sobre mim</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="contato.html">Contato</a>
+        </nav>
+      </div>
     </header>
-    <main>
-        <div class="content-box">
-            <p>Psicóloga clínica, pós-graduada em neuropsicologia e especialista em terapia cognitivo comportamental.</p>
-            <p>Minha atuação é voltada para a prática baseada em evidências, sempre buscando as melhores evidências científicas disponíveis para cada indivíduo e sua necessidade.</p>
+
+    <main class="home-main">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">PSICÓLOGA E NEUROPSICÓLOGA</p>
+
+          <h1>Márcia Carvalho</h1>
+
+          <p class="crp">CRP 01/20507</p>
+
+          <p class="hero-text">
+            Psicologia clínica com acolhimento, escuta individualizada e prática
+            baseada em evidências.
+          </p>
+
+          <p class="hero-description">
+            Minha atuação é voltada para a psicoterapia e para a avaliação
+            neuropsicológica, considerando as necessidades e particularidades de
+            cada indivíduo.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="sobre-mim.html" class="button button-primary">
+              Conheça meu trabalho
+            </a>
+
+            <a href="contato.html" class="button button-secondary">
+              Entre em contato
+            </a>
+          </div>
         </div>
+
+        <div class="hero-image">
+          <img
+            src="foto-marcia.jpeg"
+            alt="Márcia Carvalho, Psicóloga e Neuropsicóloga"
+          />
+        </div>
+      </section>
+
+      <section class="services-preview">
+        <div class="section-heading">
+          <p class="eyebrow">ATUAÇÃO PROFISSIONAL</p>
+
+          <h2>Como posso ajudar?</h2>
+
+          <p>Conheça as principais áreas de atuação profissional.</p>
+        </div>
+
+        <div class="service-cards">
+          <a href="psicoterapia.html" class="service-card">
+            <h3>Psicoterapia</h3>
+
+            <p>
+              Espaço de acolhimento e acompanhamento psicológico, considerando
+              as necessidades e objetivos de cada pessoa.
+            </p>
+
+            <span>Saiba mais →</span>
+          </a>
+
+          <a href="avaliacao-neuropsicologica.html" class="service-card">
+            <h3>Avaliação Neuropsicológica</h3>
+
+            <p>
+              Processo de investigação das funções cognitivas, considerando
+              aspectos individuais e comportamentais.
+            </p>
+
+            <span>Saiba mais →</span>
+          </a>
+        </div>
+      </section>
     </main>
-    <footer>
-        &copy; 2024 Marcia Gabriella
+
+    <footer class="site-footer">
+      <p>© 2026 Márcia Carvalho · Psicóloga e Neuropsicóloga · CRP 01/20507</p>
     </footer>
-</body>
+  </body>
 </html>
-
-
-
-
-
